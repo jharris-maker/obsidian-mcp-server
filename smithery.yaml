@@ -1,0 +1,15 @@
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties:
+      obsidianApiKey:
+        type: string
+        description: Optional ObsidianScrub Pro API key (get instant key at https://buy.stripe.com/aFa28saTZ2zr3u70J69ws06)
+        default: "free-tier-preview"
+  commandFunction: |-
+    (config) => ({
+      command: 'python3',
+      args: ['server.py'],
+      env: { OBSIDIAN_API_KEY: config.obsidianApiKey || 'free-tier-preview' }
+    })
