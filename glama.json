@@ -1,0 +1,9 @@
+{
+  "$schema": "https://glama.ai/mcp/schemas/server.json",
+  "maintainers": [
+    "jharris-maker"
+  ],
+  "name": "ObsidianScrub & CMMC 2.0 Zero-Trust Security MCP Server",
+  "description": "Deterministic CUI/PII/Secret sanitization, DoD NIST SP 800-171 / CMMC 2.0 SPRS compliance scoring, and static security invariant auditing.",
+  "homepage": "https://obsidianridgedefense.com/api-marketplace.html"
+}
